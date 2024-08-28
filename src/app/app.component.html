@@ -1,5 +1,19 @@
 <main class="main">
-  <app-product-card />
+  <nav class="header">
+    <a 
+      class="button"
+      [routerLink]="['/products']"
+      routerLinkActive="activebutton"   
+      >
+      Products
+    </a>
+     <a class="button"
+     [routerLink]="['/random-user']"
+     routerLinkActive="activebutton"
+     >
+      Users    
+    </a>  
+  </nav>
+  <router-outlet>
+  </router-outlet>
 </main>
-
-<router-outlet />

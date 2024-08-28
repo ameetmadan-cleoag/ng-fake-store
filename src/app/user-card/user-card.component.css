@@ -1,12 +1,4 @@
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.product-card {
+.user-card {
     display: flex;
     width: 600px;
     background-color: #ffffff;
@@ -16,38 +8,38 @@
     margin: 20px;
 }
 
-.product-image {
+.user-image {
     flex: 1;
     background-image: url('https://via.placeholder.com/300x400');
     background-size: cover;
     background-position: center;
 }
 
-.product-info {
+.user-info {
     flex: 2;
     padding: 20px;
 }
 
-.product-title {
+.user-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.product-description {
+.user-description {
     font-size: 14px;
     color: #666;
     margin-bottom: 20px;
 }
 
-.product-price {
+.user-price {
     font-size: 20px;
     font-weight: bold;
     color: #e44d26;
     margin-bottom: 20px;
 }
 
-.product-button {
+.user-button {
     display: inline-block;
     background-color: #4CAF50;
     color: white;
@@ -55,14 +47,4 @@
     text-decoration: none;
     border-radius: 4px;
     font-size: 16px;
-}
-
-@media (max-width: 767px) {
-    .product-card {
-        flex-direction: column;
-    }
-
-    .product-image {
-        min-height: 200px;
-    }
 }
